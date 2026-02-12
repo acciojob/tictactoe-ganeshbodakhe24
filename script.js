@@ -23,8 +23,8 @@ document.addEventListener("DOMContentLoaded", function () {
     ];
 
     submitBtn.addEventListener("click", function () {
-        player1Name = document.getElementById("player-1").value;
-        player2Name = document.getElementById("player-2").value;
+        player1Name = document.getElementById("player1").value;
+        player2Name = document.getElementById("player2").value;
 
         if (player1Name && player2Name) {
             gameArea.style.display = "block";
