@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
     let message = document.querySelector(".message");
     let cells = document.querySelectorAll(".cell");
 
-    let currentPlayer = "X";
+    let currentPlayer = "x";
     let player1Name = "";
     let player2Name = "";
     let gameActive = true;
@@ -40,14 +40,14 @@ document.addEventListener("DOMContentLoaded", function () {
             cell.textContent = currentPlayer;
 
             if (checkWinner()) {
-                let winnerName = currentPlayer === "X" ? player1Name : player2Name;
+                let winnerName = currentPlayer === "x" ? player1Name : player2Name;
                 message.textContent = `${winnerName} congratulations you won!`;
                 gameActive = false;
                 return;
             }
 
-            currentPlayer = currentPlayer === "X" ? "O" : "X";
-            let nextPlayer = currentPlayer === "X" ? player1Name : player2Name;
+            currentPlayer = currentPlayer === "x" ? "o" : "x";
+            let nextPlayer = currentPlayer === "x" ? player1Name : player2Name;
             message.textContent = `${nextPlayer}, you're up`;
         });
     });
